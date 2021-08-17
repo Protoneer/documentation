@@ -2,6 +2,17 @@ Wifi-Pixels
 ===========
 Overview
 ~~~~~~~~
+.. image:: /images/wifi_pixel/WifiPixels_Top.jpg
+
+WifiPixels are 16 addressable RGB LED's that can be controlled via WIFI or even connected to the internet. It uses the popular ESP8266 Wifi unit that is compatible with the Arduino IDE.
+
+.. image:: /images/wifi_pixel/WifiPixel_Buttons.jpg
+ :width: 200
+.. image:: /images/wifi_pixel/WifiPixels_Back.jpg
+ :width: 200
+.. image:: /images/wifi_pixel/WifiPixels_Back2.jpg
+ :width: 200
+
 
 Installation and Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
