@@ -3,12 +3,29 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Protoneer Docs's documentation!
-==========================================
+TEST
+~~~~
+.. image:: /images/img1.jpg
+ :width: 200
+ :target: products/product1
+.. image:: /images/img1.jpg
+ :width: 200
+
+TEST
+~~~~
+.. image:: /images/img1.jpg
+ :width: 200
+.. image:: /images/img1.jpg
+ :width: 200
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   products/rpi_cnc.rst
+   products/nano_arm.rst
+   products/mega-pi.rst
+   products/wifi_pixels.rst
 
 
 
@@ -16,5 +33,4 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
