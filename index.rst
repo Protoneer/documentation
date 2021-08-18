@@ -3,28 +3,22 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-TEST
-~~~~
-.. image:: /images/img1.jpg
- :width: 200
- :target: products/product1
-.. image:: /images/img1.jpg
- :width: 200
+.. image:: /images/logo3.png
 
 Product Documentation
 ~~~~~~~~~~~~~~~~~~~~~
 .. image:: /images/img1.jpg
    :width: 300
    :target: products/rpi_cnc.html
-.. image:: /images/img1.jpg
+.. image:: /images/nano_arm/NANO-ARM-Bottom1.jpg
    :width: 300
-   :target: products/rpi_cnc.html
-.. image:: /images/img1.jpg
+   :target: products/nano_arm.html
+.. image:: /images/mega-pi/MegaPi-Front.jpg
    :width: 300
-   :target: products/rpi_cnc.html
-.. image:: /images/img1.jpg
+   :target: products/mega-pi.html
+.. image:: /images/wifi_pixel/WifiPixels_Top.jpg
    :width: 300
-   :target: products/rpi_cnc.html
+   :target: products/wifi_pixel.html
 
 
 
