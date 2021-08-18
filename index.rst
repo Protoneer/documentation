@@ -9,7 +9,7 @@ Product Documentation
 ~~~~~~~~~~~~~~~~~~~~~
 .. image:: /images/img1.jpg
    :width: 300
-   :target: products/rpi_cnc.html
+   :target: products/rpi_cnc_hat.html
 .. image:: /images/nano_arm/NANO-ARM-Bottom1.jpg
    :width: 300
    :target: products/nano_arm.html
@@ -37,7 +37,7 @@ Product Documentation
    :hidden:
    :caption: Products:
 
-   products/rpi_cnc.rst
+   products/rpi_cnc_hat.rst
    products/nano_arm.rst
    products/mega-pi.rst
    products/wifi_pixels.rst   
