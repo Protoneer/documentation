@@ -8,8 +8,8 @@ jobs:
     # Standard drop-in approach that should work for most people.
     - uses: ammaraskar/sphinx-action@master
       with:
-        build-command: "sphinx-build -b html / _build"
-        docs-folder: "/"
+        docs-folder: "."
+        build-command: "sphinx-build -b html . _build"
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
