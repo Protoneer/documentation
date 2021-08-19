@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. image:: /images/logo3.png
+.. image:: /images/Logo3.png
 
 Product Documentation
 ~~~~~~~~~~~~~~~~~~~~~
@@ -28,7 +28,8 @@ Product Documentation
    :maxdepth: 2
    :hidden:
    :caption: Protoneer Websites
-
+   
+   Product Documentation <https://doco.protoneer.co.nz>
    Online Shop <https://shop.protoneer.co.nz>
    Protoneer Blog <https://blog.protoneer.co.nz>
 
