@@ -79,15 +79,6 @@ Availability, Update Notifications and Forums
             
             MyBotShop.de - Germany - info@mybotshop.de
 
-
-
-
-[[File:Logo3.PNG|200px|caption|link=http://stores.ebay.com/Protoneer]] [http://stores.ebay.com/Protoneer Protoneer Shop]
-
-
-
-
-
 **Newsletter and Forum**
 
 * `Raspberry Pi CNC Board News-Letter <http://eepurl.com/DIq-z>`_
