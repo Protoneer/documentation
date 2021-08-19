@@ -7,7 +7,7 @@
 
 Product Documentation
 ~~~~~~~~~~~~~~~~~~~~~
-.. image:: /images/img1.jpg
+.. image:: /images/rpi_cnc_hat/RPI-CNC-V260-Top-Pololu.jpg
    :width: 300
    :target: products/rpi_cnc_hat.html
 .. image:: /images/nano_arm/NANO-ARM-Bottom1.jpg
