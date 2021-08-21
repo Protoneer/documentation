@@ -29,9 +29,9 @@ Product Documentation
    :hidden:
    :caption: Protoneer Websites
    
-   Product Documentation <https://doco.protoneer.co.nz>
    Online Shop <https://shop.protoneer.co.nz>
    Protoneer Blog <https://blog.protoneer.co.nz>
+   Product Documentation <https://doco.protoneer.co.nz>
 
 .. toctree::
    :maxdepth: 2
