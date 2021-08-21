@@ -7,7 +7,10 @@ These sd card images are preconfigured to work with the Raspberry Pi CNC hat and
 
 Latest Version
 --------------
-:ref:`sd_v500`
+.. toctree::
+   :maxdepth: 1
+
+   sd_images/v500.rst
 
 Older versions
 --------------
