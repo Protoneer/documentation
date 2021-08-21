@@ -1,0 +1,60 @@
+.. _sd_v500:
+
+Version 5.00
+============
+
+:guilabel:`Download (2Gb Zip - 2020/04/12)` : `Raspberry Pi CNC Hat Image - Download 1 <test.com>`_
+
+New in this release
+-------------------
+
+* GRBL Firmware Updating Scripts - These scripts make it easy to swap between GRBL V0.9 and V1.1
+* ChiliPeppr Server `Web Interface <http://chilipeppr.com/grbl>`_ - Server shortcut on the desktop.
+* Universal Gcode Sender [ Version 1.0.9 ] `Link <https://github.com/winder/Universal-G-Code-Sender>`_ - Server shortcut on the desktop.
+
+Included
+--------
+
+* `bCNC [ Version 0.9.14 ] <https://github.com/vlachoudis/bCNC>`_ - Located on the desktop.
+* `CNC.js [ Version v1.9.20 ] <https://github.com/cncjs/cncjs>`_ - Server shortcut to start it is on the desktop. 
+    * Run the shortcut once and go to the RPI's http://<RPI-IP>:8000
+* `Arduino [ Version 1.8.10 ] <https://arduino.cc/>`_
+* AVRDude-RPI [ Customized ] - Programs Atmega328/Atmega2560's via Arduino IDE connected to /dev/ttyAMA0.
+
+standard: todo
+
+* XRDB - The Raspberry Pi can be accessed via Remote Desktop.
+* TightVNCServer - Alternative to XRDB
+* CuteCom - Very simple to use serial terminal.
+* SSH has been enabled
+* The image is less than 4.5GB uncompressed and we recommend using a 16GB SD-card.
+* The hardware serial port has been configured as [/dev/ttyAMA0]. The Raspberry Pi 3 needs and extra step.(Below)
+* NodeJS V8.11.1LTS + Yarn
+* JAVA 8
+
+
+
+todo
+* To setup a RPi 3/4's, run the "RPi3/4 Serial Config" shortcut on the desktop it will configure the hardware serial port and is only needed for on a RPi 3's and RPi 4's. It only needs to be run once and will automatically reboot the Pi.
+
+
+
+Login credentails(SSH & RDP)
+----------------------------
+
+* Username : pi
+
+* Password : raspberry
+
+Tested on
+---------
+* Raspberry Pi 4
+* Raspberry Pi 3 B+
+* Raspberry Pi 3
+* Raspberry Pi 2
+* Raspberry Pi 1 B+ (Version with 40 Pin header)
+
+.. HINT:: 
+    Shrinking the image has been an issue.   
+    We recommend using a 16GB SD Card.
+

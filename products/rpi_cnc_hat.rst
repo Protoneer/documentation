@@ -39,9 +39,9 @@ The board plugs directly into the Raspberry Pi General Purpose Input/Output pins
 .. toctree::
 
     rpi_cnc_hat/quickstart
-    rpi_cnc_hat/sd_image
     rpi_cnc_hat/config
     rpi_cnc_hat/versions
+    rpi_cnc_hat/sd_image
 
 
 Availability, Update Notifications and Forums
