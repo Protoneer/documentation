@@ -1,3 +1,5 @@
+.. _rpi_cnc_hat:
+
 Raspberry Pi CNC Hat
 ====================
 .. image:: /images/rpi_cnc_hat/RPI-CNC-V260-Top-Pololu.jpg
@@ -37,6 +39,7 @@ The board plugs directly into the Raspberry Pi General Purpose Input/Output pins
 .. toctree::
 
     rpi_cnc_hat/quickstart
+    rpi_cnc_hat/sd_image
     rpi_cnc_hat/config
     rpi_cnc_hat/versions
 
