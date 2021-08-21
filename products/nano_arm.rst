@@ -47,7 +47,7 @@ Power Management
 3.3V Regulation is done with a NCP551 Low-Dropout Voltage regulator.
 
 * Input Voltage 12V max
-* Output currnet 150mA
+* Output current 150mA
 * Very low quiescent current of 4.0uA(Typical)
 
 Datasheets
@@ -68,7 +68,7 @@ This is the guide as provided with the Arduino Zero : `Programming Guide <https:
 
 Pin Mappings
 ____________
-Pin mappings for Arduino Zero / NANO-ARM is avaialable from the Arduino Github repository at:
+Pin mappings for Arduino Zero / NANO-ARM is available from the Arduino Github repository at:
 `https://github.com/arduino/ArduinoCore-samd/blob/master/variants/arduino_zero/variant.cpp <https://github.com/arduino/ArduinoCore-samd/blob/master/variants/arduino_zero/variant.cpp>`_
 
 Serial Ports

@@ -10,7 +10,7 @@ Version 2.60
 Version 2.58
 ------------
 * Replaced the Arduino Nano with a embedded micro-controller(ATMEGA328 - Arduino UNO compatible)
-* Add reset circuitry to enable programming directly from the Raspberry Pi. ISP pins added and preloaded with the Opti-Boot bootloader. This opens the door for other firmwares like Firmata.
+* Add reset circuitry to enable programming directly from the Raspberry Pi. ISP pins added and preloaded with the Opti-Boot bootloader. This opens the door for other firmware like Firmata.
 * Replaced clone jumpers with solder-able jumpers.
 * Later batches might have dip-switches instead of Jumper headers.
 * First Protoneer board to be mode on our Pick and Place machine.
@@ -38,7 +38,7 @@ Version 2.58
 Version 2.51
 ------------
 * Extra Stepper Drivers Socket that can clone one of the other Axes.
-* End-stop + Probe line noise filters. Allows end stops to work with normal un-shielded cable.
+* End-stop + Probe line noise filters. Allows end stops to work with normal unshielded cable.
 * Breakout pins allowing external Stepper drivers to be hooked up.
 * Wiki Page - http://wiki.protoneer.co.nz/Raspberry_Pi_CNC_v2.51
 

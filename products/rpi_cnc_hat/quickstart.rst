@@ -15,7 +15,7 @@ What you will need to get started
 ---------------------------------
 * Raspberry Pi CNC Board/Hat
 * Raspberry Pi B+ / Raspberry Pi 2 / 3 / 4 (Raspberry Pi with 20x2 pin header) + accessories like screen, keyboard, mouse.....
-* 8GB or Bigger Micro SD Card or bigger. (Internet connection to download the pre-made Raspberry Pi Image)
+* 8GB or Bigger Micro SD Card or bigger. (Internet connection to download the pre-configured Raspberry Pi Image)
 * CNC Hardware - This will not be covered in this wiki but includes things like Stepper Motors+ Pololu Drivers, Linear rails and all the mechanical bits.
 
 Download the pre-configured Raspberry Pi image
@@ -31,7 +31,7 @@ Included software:
 
 To install the image follow the standard process as documented by the Raspberry Pi website : `Raspberry Pi - INSTALLING OPERATING SYSTEM IMAGES <https://www.raspberrypi.org/documentation/installation/installing-images/README.md>`_
 
-Download the lates pre configured Raspberry Pi sd card images : :ref:`sd_image`
+Download the latest pre configured Raspberry Pi sd card images : :ref:`sd_image`
 
 Install the Raspberry Pi CNC board while waiting for the download
 -----------------------------------------------------------------
@@ -147,4 +147,4 @@ Links and extra reading
 * `Arduino <http://arduino.cc/>`_ - Magic device that connects to sensors and computers.
 * `GRBL <https://github.com/gnea/grbl>`_ - GCode Interpreter that runs on an Arduino(Atmel ATMEGA328) Micro-controller
 * `bCNC <https://github.com/vlachoudis/bCNC/wiki>`_ - Python Based GCode sender that connects to GRBL
-* `CNC <https://github.com/cheton/cnc>`_ - Webbased GCode sender that connects to GRBL
+* `CNC <https://github.com/cheton/cnc>`_ - Web based GCode sender that connects to GRBL

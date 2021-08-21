@@ -59,4 +59,4 @@ Hardware
 ~~~~~~~~
 Version 1.00
 ------------
-* Initial release. Arduino Mega2560 compatable Raspberry Pi Hat.
+* Initial release. Arduino Mega2560 compatible Raspberry Pi Hat.

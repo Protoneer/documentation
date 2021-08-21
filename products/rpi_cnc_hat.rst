@@ -6,7 +6,7 @@ Raspberry Pi CNC Hat
 
 The RPI CNC Board combines a real-time CNC controller(Micro-controller running GRBL) with a powerful credit card size computer(Raspberry Pi).
 
-By combining the two systems we have created an eco-system where the Raspberry Pi provides benefits like: Processing power, connectivity(IOT) and a well supported community.
+By combining the two systems we have created an ecosystem where the Raspberry Pi provides benefits like: Processing power, connectivity(IOT) and a well supported community.
 
 The board plugs directly into the Raspberry Pi General Purpose Input/Output pins, with the micro-controller and Raspberry Pi communicating via serial. (/dev/ttyAMA0)
 
