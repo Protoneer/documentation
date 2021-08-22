@@ -2,5 +2,3 @@ Firmware
 ========
 
 todo
-
-asfasfsdf
