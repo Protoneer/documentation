@@ -1,7 +1,7 @@
 on: push
 name: 🚀 Deploy website on push
 jobs:
-  build:
+  Spell Check:
     runs-on: ubuntu-latest
     steps:
 
@@ -25,25 +25,44 @@ jobs:
         sphinx-build -b spelling . _build -W
         if [[ -s "_build/spelling/index.spelling" ]]; then cat "_build/spelling/index.spelling"; fi
 
-    - name: Check _build folder
+    # - name: Check _build folder
+    #   run: |
+    #     ls _build
+
+    # - name: Clean folder
+    #   run: |
+    #     make clean
+
+    # - name: Build folder
+    #   run: |
+    #     make html
+
+    # - name: 📂 Sync files
+    #   uses: SamKirkland/FTP-Deploy-Action@4.1.0
+    #   with:
+    #     server: ${{ secrets.ftp_server }}
+    #     username: ${{ secrets.ftp_user }}
+    #     password: ${{ secrets.ftp_password }}
+    #     local-dir: _build/
+
+    build:
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@v1
+
+    - name: Step 1 - Create a temporary artifact downloads folder
+      run: mkdir _build
+    
+    # Standard drop-in approach that should work for most people.  
+    - uses: ammaraskar/sphinx-action@master
+      with:
+        docs-folder: "."
+        build-command: "sphinx-build -b html . _build"
+
+    - name: Check folder
       run: |
         ls _build
-
-    - name: Clean folder
-      run: |
-        make clean
-
-    - name: Build folder
-      run: |
-        make html
-
-
-    # # Standard drop-in approach that should work for most people.  
-    # - uses: ammaraskar/sphinx-action@master
-    #   with:
-    #     docs-folder: "."
-    #     build-command: "sphinx-build -b html . _build"
-
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
