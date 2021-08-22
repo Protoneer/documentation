@@ -10,6 +10,17 @@ jobs:
     - name: Step 1 - Create a temporary artifact downloads folder
       run: mkdir _build
     
+    - name: Install dependencies
+      run: |
+        sudo apt update && sudo apt install -y enchant
+        python -m pip install --upgrade setuptools
+        python -m pip install --upgrade doc8 pyenchant sphinx-rtd-theme sphinxcontrib-spelling
+    - name: Check spelling
+      # show list of misspelled words
+      run: |
+        make spelling
+        if [[ -s "_build/spelling/index.spelling" ]]; then cat "_build/spelling/index.spelling"; fi
+
     # Standard drop-in approach that should work for most people.  
     - uses: ammaraskar/sphinx-action@master
       with:
