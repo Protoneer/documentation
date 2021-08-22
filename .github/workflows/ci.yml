@@ -1,67 +1,67 @@
-name: colcon.readthedocs.org
+# name: colcon.readthedocs.org
 
-on: [push]
+# on: [push]
 
-jobs:
-  build:
+# jobs:
+#   build:
 
-    runs-on: ubuntu-latest
+#     runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.8
-    - name: Install dependencies
-      run: |
-        sudo apt update && sudo apt install -y enchant
-        python -m pip install --upgrade setuptools
-        python -m pip install --upgrade doc8 pyenchant sphinx-rtd-theme sphinxcontrib-spelling
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Set up Python
+#       uses: actions/setup-python@v1
+#       with:
+#         python-version: 3.8
+#     - name: Install dependencies
+#       run: |
+#         sudo apt update && sudo apt install -y enchant
+#         python -m pip install --upgrade setuptools
+#         python -m pip install --upgrade doc8 pyenchant sphinx-rtd-theme sphinxcontrib-spelling
 
-    - name: Check spelling
-      # show list of misspelled words
-      run: |
-        make spelling
-        if [[ -s "_build/spelling/index.spelling" ]]; then cat "_build/spelling/index.spelling"; fi
-    - name: Build documentation
-      run: |
-        make html
-    # - name: Lint generated documentation
-    #   run: |
-    #     doc8 --max-line-length 999 index.rst developer/ migration/ user/ -v
-    - name: Spelling errors fail the build
-      # fail the build in case of any misspelled words
-      run: |
-        if [[ -s "_build/spelling/index.spelling" ]]; then cat "_build/spelling/index.spelling"; fi
-        if [[ -s "_build/spelling/index.spelling" ]]; then false; fi
+#     - name: Check spelling
+#       # show list of misspelled words
+#       run: |
+#         make spelling
+#         if [[ -s "_build/spelling/index.spelling" ]]; then cat "_build/spelling/index.spelling"; fi
+#     - name: Build documentation
+#       run: |
+#         make html
+#     # - name: Lint generated documentation
+#     #   run: |
+#     #     doc8 --max-line-length 999 index.rst developer/ migration/ user/ -v
+#     - name: Spelling errors fail the build
+#       # fail the build in case of any misspelled words
+#       run: |
+#         if [[ -s "_build/spelling/index.spelling" ]]; then cat "_build/spelling/index.spelling"; fi
+#         if [[ -s "_build/spelling/index.spelling" ]]; then false; fi
 
-    # - name: Check folder
-    #   run: |
-    #     ls _build
+#     # - name: Check folder
+#     #   run: |
+#     #     ls _build
 
-    # - name: 📂 Sync files
-    #   uses: SamKirkland/FTP-Deploy-Action@4.1.0
-    #   with:
-    #     server: ${{ secrets.ftp_server }}
-    #     username: ${{ secrets.ftp_user }}
-    #     password: ${{ secrets.ftp_password }}
-    #     local-dir: _build/
+#     # - name: 📂 Sync files
+#     #   uses: SamKirkland/FTP-Deploy-Action@4.1.0
+#     #   with:
+#     #     server: ${{ secrets.ftp_server }}
+#     #     username: ${{ secrets.ftp_user }}
+#     #     password: ${{ secrets.ftp_password }}
+#     #     local-dir: _build/
 
-  rstcheck:
-    name: Validate rst
-    runs-on: ubuntu-latest
-    steps:
-      - uses: "actions/checkout@v2"
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
+#   rstcheck:
+#     name: Validate rst
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: "actions/checkout@v2"
+#       - name: Set up Python 3.8
+#         uses: actions/setup-python@v2
+#         with:
+#           python-version: 3.8
 
-      - name: Install dependencies
-        run: |
-            sudo apt-get install python3-setuptools
-            sudo python -m pip install --upgrade pip
-            sudo pip install rstcheck
-      - name: run rstcheck
-        run: rstcheck --report error *.rst
+#       - name: Install dependencies
+#         run: |
+#             sudo apt-get install python3-setuptools
+#             sudo python -m pip install --upgrade pip
+#             sudo pip install rstcheck
+#       - name: run rstcheck
+#         run: rstcheck --report error *.rst
