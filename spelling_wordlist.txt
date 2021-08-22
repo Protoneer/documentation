@@ -44,3 +44,5 @@ todo
 th
 Endstops
 pdf
+jitter
+shifters
