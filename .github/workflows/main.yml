@@ -7,9 +7,12 @@ jobs:
 
     - uses: actions/checkout@v1
 
-    - name: Step 1 - Create a temporary artifact downloads folder
-      run: mkdir _build
-    
+  
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -22,6 +25,16 @@ jobs:
       run: |
         make spelling
         if [[ -s "_build/spelling/index.spelling" ]]; then cat "_build/spelling/index.spelling"; fi
+    - name: Spelling errors fail the build
+      # fail the build in case of any misspelled words
+      run: |
+        if [[ -s "_build/spelling/index.spelling" ]]; then cat "_build/spelling/index.spelling"; fi
+        if [[ -s "_build/spelling/index.spelling" ]]; then false; fi
+
+
+    - name: Step 1 - Create a temporary artifact downloads folder
+      run: mkdir _build
+
 
     # Standard drop-in approach that should work for most people.  
     - uses: ammaraskar/sphinx-action@master
