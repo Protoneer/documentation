@@ -1,7 +1,7 @@
 on: push
 name: 🚀 Deploy website on push
 jobs:
-  Spell Check:
+  spelling:
     runs-on: ubuntu-latest
     steps:
 
