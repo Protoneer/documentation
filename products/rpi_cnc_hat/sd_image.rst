@@ -3,7 +3,7 @@
 SD Card Images
 ==============
 
-These sd card images are preconfigured to work with the Raspberry Pi CNC hat and includes a bunch of G-Code senders to interact with GRBL.
+These SD card images are preconfigured to work with the Raspberry Pi CNC hat and includes a bunch of G-Code senders to interact with GRBL.
 
 Latest Version
 --------------
