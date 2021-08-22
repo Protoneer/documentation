@@ -31,9 +31,16 @@ jobs:
 
     - uses: actions/checkout@v1
 
-    # - name: Step 1 - Create a temporary artifact downloads folder
-    #   run: mkdir _build
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
 
+    - name: Install dependencies
+      run: |
+        sudo apt update && sudo apt install -y enchant
+        python -m pip install --upgrade setuptools
+        python -m pip install --upgrade pyenchant sphinx-rtd-theme
     
     # Standard drop-in approach that should work for most people.  
     - uses: ammaraskar/sphinx-action@master
