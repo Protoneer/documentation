@@ -31,7 +31,7 @@ Included software:
 
 To install the image follow the standard process as documented by the Raspberry Pi website : `Raspberry Pi - INSTALLING OPERATING SYSTEM IMAGES <https://www.raspberrypi.org/documentation/installation/installing-images/README.md>`_
 
-Download the latest pre configured Raspberry Pi sd card images : :ref:`sd_image`
+Download the latest pre configured Raspberry Pi SD card images : :ref:`sd_image`
 
 Install the Raspberry Pi CNC board while waiting for the download
 -----------------------------------------------------------------
