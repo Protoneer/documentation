@@ -15,7 +15,6 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
         sudo apt update && sudo apt install -y enchant
         python -m pip install --upgrade setuptools
         python -m pip install --upgrade doc8 pyenchant sphinx-rtd-theme sphinxcontrib-spelling
@@ -23,7 +22,7 @@ jobs:
     - name: Check spelling
       # show list of misspelled words
       run: |
-        make spelling
+        sphinx-build -b spelling . _build -W
         if [[ -s "_build/spelling/index.spelling" ]]; then cat "_build/spelling/index.spelling"; fi
     - name: Spelling errors fail the build
       # fail the build in case of any misspelled words
