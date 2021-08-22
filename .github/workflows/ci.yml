@@ -26,9 +26,9 @@ jobs:
     - name: Build documentation
       run: |
         make html
-    - name: Lint generated documentation
-      run: |
-        doc8 --max-line-length 999 index.rst developer/ migration/ user/ -v
+    # - name: Lint generated documentation
+    #   run: |
+    #     doc8 --max-line-length 999 index.rst developer/ migration/ user/ -v
     - name: Spelling errors fail the build
       # fail the build in case of any misspelled words
       run: |
