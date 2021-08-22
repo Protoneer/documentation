@@ -30,10 +30,13 @@ jobs:
     #     if [[ -s "_build/spelling/index.spelling" ]]; then cat "_build/spelling/index.spelling"; fi
     #     if [[ -s "_build/spelling/index.spelling" ]]; then false; fi
 
+    - name: Check _build folder
+      run: |
+        ls _build
 
-    - name: Step 1 - Create a temporary artifact downloads folder
-      run: mkdir _build
-
+    - name: Clean folder
+      run: |
+        make clean
 
     # Standard drop-in approach that should work for most people.  
     - uses: ammaraskar/sphinx-action@master
@@ -41,9 +44,7 @@ jobs:
         docs-folder: "."
         build-command: "sphinx-build -b html . _build"
 
-    - name: Check folder
-      run: |
-        ls _build
+
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
